@@ -5,6 +5,8 @@ This repo tracks my progress for [LeetCode](https://leetcode.com/). I'm focused 
 ## Topics Covered
 
 - Arrays & Strings
+- Linked Lists
+- Math
 - Two Pointers
 
 ## Progress
