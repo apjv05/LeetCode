@@ -13,4 +13,4 @@ This repo tracks my progress for [LeetCode](https://leetcode.com/). I'm focused 
 
 - Total solved: 30+
 - Language: C++
-- Solving pace: 7–14 problems/week (varies)
+- Solving pace: 7+ problems/week
