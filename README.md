@@ -7,6 +7,7 @@ This repo tracks my progress for [LeetCode](https://leetcode.com/). I'm focused 
 - Arrays & Strings
 - Linked Lists
 - Math
+- Sliding Window
 - Two Pointers
 
 ## Progress
