@@ -9,6 +9,7 @@ This repo tracks my progress for [LeetCode](https://leetcode.com/). I'm focused 
 - Math
 - Sliding Window
 - Stack
+- Trees
 - Two Pointers
 
 ## Progress
