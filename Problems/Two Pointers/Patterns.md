@@ -4,15 +4,15 @@ Core idea is to use two different points that point to different data in a data 
 ## Oposing Ends
 Start two pointers at opposite ends of the array or string and move them toward each other based on logic.
 
-Should be used when
-- Pairs with a target sum.
-- Removing elements based on conditions.
-- Checking for palindromes.
-- Maximizing/minimizing something between both ends (like area or distance).
+Should be used when you need to
+- Find pairs
+- Compare two elements
+- Add/remove two elements
+- Go from O(n²) → O(n)
 
 key properties
-- left++ when its too small.
-- right-- when its too big.
+- left++ based on problem condition.
+- right-- based on problem condition.
 
 Works best when data is sorted (or can be sorted).
 
@@ -22,3 +22,7 @@ Have one pointer move faster than the other, usually at twice the speed. Used wh
 Should be used when
 - You're dealing with cyclic structures like linked lists.
 - You need to find a middle, detect cycles, or partition a structure.
+    - Structural detection
+
+Key Proproties
+- One pointer increments one and the other increments two
