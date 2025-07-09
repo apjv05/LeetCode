@@ -5,6 +5,7 @@ This repo tracks my progress for [LeetCode](https://leetcode.com/u/apjv05/). I'm
 ## Topics Covered
 
 - Arrays & Strings
+- Binary Search
 - Linked Lists
 - Math
 - Sliding Window
@@ -14,6 +15,6 @@ This repo tracks my progress for [LeetCode](https://leetcode.com/u/apjv05/). I'm
 
 ## Progress
 
-- Total solved: 50+
+- Total solved: 60+
 - Language: C++
 - Solving pace: 7+ problems/week
