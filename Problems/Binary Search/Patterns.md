@@ -39,18 +39,19 @@ When to use
 - usually a range of possible answers
 
 Key Proporties
-- Identify the monotonic condition and create a way to check for it
-- set the bounds for the answer 
+- set the search space for all possible values of your answer
 - for min
-    - check if mid is true
-    - if mid is true, try to find a smaller one
-    - if mid is false, you need to find a larger value
-    - the final ans will hold the min value
+    - find mid
+    - test if mid works/is true
+    - if mid is true, try to find a smaller one and save that value
+    - if mid is false, try to find a larger value
+    - return that saved value
 - for max
-    - check if mid is true
-    - if mid is true, try to find a larger value
+    - find mid
+    - check if mid works/is true
+    - if mid is true, try to find a larger value and save that value
     - if mid is false, try to find a smaller value
-    - final ans will hold the max value
+    - return that saved value
 - Loop Varients
     - the choice of `while left < right` vs. `while left <= right` and `mid` vs. `mid+1` or `mid-1` depends on how you want your pointers to converge and which pointer will have the answer
         - `left < right` loop usually ends with `left == right`, and that value is often the answer.
