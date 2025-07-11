@@ -2,7 +2,7 @@
 Highly efficient for searching in sorted data.
 
 ## Basic Binary Search
-Given a sorted array and a target value, find if the target exists and return its index. Super easy.
+Given a sorted array and a target value, find if the target exists and return its index.
 
 When to Use:
 - You have a sorted array (or list).
@@ -48,10 +48,7 @@ Key Proporties
     - return that saved value
 - for max
     - find mid
-    - check if mid works/is true
+    - test if mid works/is true
     - if mid is true, try to find a larger value and save that value
     - if mid is false, try to find a smaller value
     - return that saved value
-- Loop Varients
-    - the choice of `while left < right` vs. `while left <= right` and `mid` vs. `mid+1` or `mid-1` depends on how you want your pointers to converge and which pointer will have the answer
-        - `left < right` loop usually ends with `left == right`, and that value is often the answer.
