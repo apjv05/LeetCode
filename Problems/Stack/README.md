@@ -19,5 +19,5 @@ Should be used when you need to find
 
 Key Proprties
 - Push elements (or their indices) onto the stack
-- If the current element breaks the monotonicity, you pop elements from the stack until the monotonicity is restored.
-- The popped elements are usually the ones for which you've found their "next greater/smaller" value.
+- If the current element breaks the monotonicity, you pop elements from the stack until the monotonicity is restored
+- The popped elements are usually the ones for which you've found their "next greater/smaller" value
