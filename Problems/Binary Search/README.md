@@ -5,29 +5,29 @@ Highly efficient for searching in sorted data.
 Given a sorted array and a target value, find if the target exists and return its index.
 
 When to Use:
-- You have a sorted array (or list).
-- You need to find if a specific target value exists in the array.
-- You need to return the index of the target if found.
+- You have a sorted array (or list)
+- You need to find if a specific target value exists in the array
+- You need to return the index of the target if found
 
 ## Finding First/Last Occurrence of a Target
 When there are duplicate elements in a sorted array, you might need to find the first or last index of a target.
 
 When to Use:
-- You have a sorted array (or list) that might contain duplicate elements.
-- You need to find the first index where a target appears.
-- You need to find the last index where a target appears.
+- You have a sorted array (or list) that might contain duplicate elements
+- You need to find the first index where a target appears
+- You need to find the last index where a target appears
 
 Key Proporties
 - Modification of Basic Binary Search
-    - The setup is similar, but the action taken when `nums[mid] == target` changes.
+    - The setup is similar, but the action taken when `nums[mid] == target` changes
 - For First Occurrence
     - if `mid == target`, could be the first occurrence, store it as a potential answer
     - then search the left half and update as needed
-    - if `mid < target`, search right; if `mid > target`, search left.
+    - if `mid < target`, search right; if `mid > target`, search left
 - For Last Occurrence
     - if `mid == target`, could be the last occurrence, store it as a potential answer
     - then search the right half and update as needed
-    - if `mid < target`, search right; if `mid > target`, search left.
+    - if `mid < target`, search right; if `mid > target`, search left
 
 ## Finding Smallest/Largest Element
 The problem isn't explicitly about searching a sorted array, but you can define a monotonic "condition function" that can be checked using binary search. The search space is often a range of possible answers, not indices in an array.
@@ -64,14 +64,14 @@ Key Proporties
     - atleast one have of the array must be sorted in an ascending order
 - Determine the location
     - For left
-        - Check if the target falls within this sorted left half `nums[left] <= target < nums[mid]`.
+        - Check if the target falls within this sorted left half `nums[left] <= target < nums[mid]`
         - If yes, search left
         - If no, search right 
     - For right
-        - This means the pivot is in the left half, and mid is in the right sorted portion.
-        - Check if the target falls within this sorted right half `nums[mid] < target <= nums[right]`.
+        - This means the pivot is in the left half, and mid is in the right sorted portion
+        - Check if the target falls within this sorted right half `nums[mid] < target <= nums[right]`
         - If yes, search right
         - If no, search left
 - Edge Cases
-    - If duplicates are present it becomes harder to determine the sorted half when `nums[left] == nums[mid] == nums[right]`. 
-    - increment left (or decrement right) to shrink the search space, as nums[left] doesn't give useful information.
+    - If duplicates are present it becomes harder to determine the sorted half when `nums[left] == nums[mid] == nums[right]`
+    - increment left (or decrement right) to shrink the search space, as nums[left] doesn't give useful information
