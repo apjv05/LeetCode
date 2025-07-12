@@ -1,4 +1,4 @@
-# Binary Search
+# Binary Search Patterns
 Highly efficient for searching in sorted data.
 
 ## Basic Binary Search
@@ -52,3 +52,26 @@ Key Proporties
     - if mid is true, try to find a larger value and save that value
     - if mid is false, try to find a smaller value
     - return that saved value
+
+### Rotated Sorted Array
+An array that was originally sorted but then rotated at some pivot point (e.g., `[4,5,6,7,0,1,2]`). The challenge is that the mid element doesn't necessarily tell you if the left or right half is sorted.
+
+When to use
+- You need to find a target value within a rotated array
+
+Key Proporties
+- Identify the Sorted Half
+    - atleast one have of the array must be sorted in an ascending order
+- Determine the location
+    - For left
+        - Check if the target falls within this sorted left half `nums[left] <= target < nums[mid]`.
+        - If yes, search left
+        - If no, search right 
+    - For right
+        - This means the pivot is in the left half, and mid is in the right sorted portion.
+        - Check if the target falls within this sorted right half `nums[mid] < target <= nums[right]`.
+        - If yes, search right
+        - If no, search left
+- Edge Cases
+    - If duplicates are present it becomes harder to determine the sorted half when `nums[left] == nums[mid] == nums[right]`. 
+    - increment left (or decrement right) to shrink the search space, as nums[left] doesn't give useful information.
