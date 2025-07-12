@@ -1,4 +1,4 @@
-# Two Pointers
+# Two Pointers Patterns
 Core idea is to use two different points that point to different data in a data structure which you can then move and manipulate. The is key is to know when to move them and what to do.
 
 ## Oposing Ends

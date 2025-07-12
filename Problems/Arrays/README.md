@@ -1,4 +1,4 @@
-# Hashing and Prefix Sums
+# Hashing and Prefix Sums Patterns
 
 ## Hash table
 Used to find and store data in constant time.

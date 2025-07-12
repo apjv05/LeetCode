@@ -1,4 +1,4 @@
-# Sliding Window
+# Sliding Window Patterns
 Core idea:
 Instead of reprocessing the same elements repeatedly (e.g., in nested loops), we use two pointers (often called start and end or left and right) to create a "window" that moves over the input—typically a string or array. The key is to efficiently manage only the elements entering and leaving the window. In practice make sure to only handle information coming in and out.
 
