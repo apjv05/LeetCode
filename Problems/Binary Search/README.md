@@ -53,7 +53,7 @@ Key Proporties
     - if mid is false, try to find a smaller value
     - return that saved value
 
-### Rotated Sorted Array
+## Rotated Sorted Array
 An array that was originally sorted but then rotated at some pivot point (e.g., `[4,5,6,7,0,1,2]`). The challenge is that the mid element doesn't necessarily tell you if the left or right half is sorted.
 
 When to use
