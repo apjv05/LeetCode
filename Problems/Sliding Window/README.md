@@ -4,8 +4,8 @@ Instead of reprocessing the same elements repeatedly (e.g., in nested loops), we
 
 ## Fixed Window
 Should be used when 
-- The window size k is constant.
-- You're asked to calculate values for every subarray or substring of size k.
+- The window size k is constant
+- You're asked to calculate values for every subarray or substring of size k
 
 Key Properties
 - Window size = fixed (right - left + 1 == k)
@@ -15,18 +15,18 @@ Key Properties
 Should be used when 
 - You don't know the window size ahead of time 
 - To find a minimum or maximum length of a subarray or substring that satisfies a condition 
-- The condition depends on window contents, not just size.
+- The condition depends on window contents, not just size
 
 Key Properties
-- You expand right to grow the window until a condition is met.
-- Then, you contract left to shrink the window and try to tighten the result.
-- Usually involves checking validity inside a while loop.
+- You expand right to grow the window until a condition is met
+- Then, you contract left to shrink the window and try to tighten the result
+- Usually involves checking validity inside a while loop
 
 ## Dynamic w/ Data Structure Window
 Should be used when:
-- You need to track frequencies, counts, or state of elements inside the window.
-- You care about distinct characters, duplicates, or match counts (e.g., anagram, substring contains).
-- The check for window validity is not trivial and needs some tracking data.
+- You need to track frequencies, counts, or state of elements inside the window
+- You care about distinct characters, duplicates, or match counts (e.g., anagram, substring contains)
+- The check for window validity is not trivial and needs some tracking data
 
 Common Data Structures
 - Hash Map (for character counts or frequency)
