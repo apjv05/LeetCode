@@ -5,7 +5,7 @@ This repo tracks my progress for [LeetCode](https://leetcode.com/u/apjv05/). I'm
 ## Topics Covered
 
 ### Major
-These topic are more covered and include a README.md full of patterns
+These topic are more covered and include a README.md full of patterns.
 - Arrays & Strings
 - Binary Search
 - Sliding Window
@@ -13,7 +13,7 @@ These topic are more covered and include a README.md full of patterns
 - Two Pointers
 
 ### Minor
-These topics arent as coverd
+These topics arent as covered.
 - Linked Lists
 - Math
 - Trees
