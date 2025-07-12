@@ -11,8 +11,8 @@ Should be used when you need to
 - Go from O(n²) → O(n)
 
 key properties
-- left++ based on problem condition.
-- right-- based on problem condition.
+- left++ based on problem condition
+- right-- based on problem condition
 
 Works best when data is sorted (or can be sorted).
 
@@ -20,8 +20,8 @@ Works best when data is sorted (or can be sorted).
 Have one pointer move faster than the other, usually at twice the speed. Used when you need to detect cycles, middle points, or manage traversal without extra memory.
 
 Should be used when
-- You're dealing with cyclic structures like linked lists.
-- You need to find a middle, detect cycles, or partition a structure.
+- You're dealing with cyclic structures like linked lists
+- You need to find a middle, detect cycles, or partition a structure
     - Structural detection
 
 Key Proproties
