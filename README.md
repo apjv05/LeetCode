@@ -4,14 +4,19 @@ This repo tracks my progress for [LeetCode](https://leetcode.com/u/apjv05/). I'm
 
 ## Topics Covered
 
+### Major
+These topic are more covered and include a README.md full of patterns
 - Arrays & Strings
 - Binary Search
-- Linked Lists
-- Math
 - Sliding Window
 - Stack
-- Trees
 - Two Pointers
+
+### Minor
+These topics arent as coverd
+- Linked Lists
+- Math
+- Trees
 
 ## Progress
 
