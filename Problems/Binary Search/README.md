@@ -17,7 +17,7 @@ When to Use:
 - You need to find the first index where a target appears
 - You need to find the last index where a target appears
 
-Key Proporties
+Key Properties
 - Modification of Basic Binary Search
     - The setup is similar, but the action taken when `nums[mid] == target` changes
 - For First Occurrence
@@ -38,7 +38,7 @@ When to use
 - Condition must be monotonic
 - usually a range of possible answers
 
-Key Proporties
+Key Properties
 - set the search space for all possible values of your answer
 - for min
     - find mid
@@ -59,9 +59,9 @@ An array that was originally sorted but then rotated at some pivot point (e.g., 
 When to use
 - You need to find a target value within a rotated array
 
-Key Proporties
+Key Properties
 - Identify the Sorted Half
-    - atleast one have of the array must be sorted in an ascending order
+    - at least one have of the array must be sorted in an ascending order
 - Determine the location
     - For left
         - Check if the target falls within this sorted left half `nums[left] <= target < nums[mid]`
@@ -74,4 +74,4 @@ Key Proporties
         - If no, search left
 - Edge Cases
     - If duplicates are present it becomes harder to determine the sorted half when `nums[left] == nums[mid] == nums[right]`
-    - increment left (or decrement right) to shrink the search space, as nums[left] doesn't give useful information
+    - increment left (or decrement right) to shrink the search space, as `nums[left]` doesn't give useful information
