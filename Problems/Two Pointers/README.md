@@ -1,7 +1,7 @@
 # Two Pointers Patterns
 Core idea is to use two different points that point to different data in a data structure which you can then move and manipulate. The is key is to know when to move them and what to do.
 
-## Oposing Ends
+## Opposing Ends
 Start two pointers at opposite ends of the array or string and move them toward each other based on logic.
 
 Should be used when you need to
@@ -24,5 +24,5 @@ Should be used when
 - You need to find a middle, detect cycles, or partition a structure
     - Structural detection
 
-Key Proproties
+Key Properties
 - One pointer increments one and the other increments two
