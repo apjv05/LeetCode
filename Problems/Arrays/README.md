@@ -10,9 +10,9 @@ Use a hash set to check for duplicates. Hash set provides O(1) average-time look
 Count how often elements appear using a hash map. Counting in a map makes frequency-based logic simple and efficient.
 
 ## Prefix Sums
-Precompute sums of subarrays from index 0 to i, and use it to get range sums in O(1).
+Precompute sums of sub arrays from index 0 to i, and use it to get range sums in O(1).
 
 Common Use Cases:
-- Subarray sums
-- Count subarrays with target sum
+- Sub array sums
+- Count sub arrays with target sum
 - Optimizing range queries
