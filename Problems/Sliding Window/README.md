@@ -5,7 +5,7 @@ Instead of reprocessing the same elements repeatedly (e.g., in nested loops), we
 ## Fixed Window
 Should be used when 
 - The window size k is constant
-- You're asked to calculate values for every subarray or substring of size k
+- You're asked to calculate values for every sub array or substring of size k
 
 Key Properties
 - Window size = fixed (right - left + 1 == k)
@@ -14,7 +14,7 @@ Key Properties
 ## Dynamic Window
 Should be used when 
 - You don't know the window size ahead of time 
-- To find a minimum or maximum length of a subarray or substring that satisfies a condition 
+- To find a minimum or maximum length of a sub array or substring that satisfies a condition 
 - The condition depends on window contents, not just size
 
 Key Properties
