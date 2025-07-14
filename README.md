@@ -13,7 +13,7 @@ These topic are more covered and include a README.md full of patterns.
 - Two Pointers
 
 ### Minor
-These topics arent as covered.
+These topics aren't as covered.
 - Linked Lists
 - Math
 - Trees
