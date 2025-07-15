@@ -60,18 +60,14 @@ When to use
 - You need to find a target value within a rotated array
 
 Key Properties
-- Identify the Sorted Half
-    - at least one have of the array must be sorted in an ascending order
-- Determine the location
-    - For left
-        - Check if the target falls within this sorted left half `nums[left] <= target < nums[mid]`
-        - If yes, search left
-        - If no, search right 
-    - For right
-        - This means the pivot is in the left half, and mid is in the right sorted portion
-        - Check if the target falls within this sorted right half `nums[mid] < target <= nums[right]`
-        - If yes, search right
-        - If no, search left
+- Identify the pivot
+    - where its the smallest value
+    - can be done with `while(low < high)` to find the pivot (smallest value)
+        - find the mid
+        - if the value of the mid is > the value of the high, than we know the smaller half is in the right half and we can set low = mid + 1
+        - if not, then we know that the smaller value is in the left half so we can set high = mid
+        - the pivot will be low
+- Do logic as needed
 - Edge Cases
     - If duplicates are present it becomes harder to determine the sorted half when `nums[left] == nums[mid] == nums[right]`
     - increment left (or decrement right) to shrink the search space, as `nums[left]` doesn't give useful information
