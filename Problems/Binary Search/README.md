@@ -60,6 +60,9 @@ When to use
 - You need to find a target value within a rotated array
 
 Key Properties
+
+There are  two ways to solve this problem. The first is:
+- Find our range
 - Identify the pivot
     - where its the smallest value
     - can be done with `while(low < high)` to find the pivot (smallest value)
@@ -68,6 +71,18 @@ Key Properties
         - if not, then we know that the smaller value is in the left half so we can set high = mid
         - the pivot will be low
 - Do logic as needed
-- Edge Cases
-    - If duplicates are present it becomes harder to determine the sorted half when `nums[left] == nums[mid] == nums[right]`
-    - increment left (or decrement right) to shrink the search space, as `nums[left]` doesn't give useful information
+
+the second is:
+- Find our range
+- find mid
+- Now we have to figure out if we're in the right half or the left half
+    - left half
+        - the the value of our low is < the value of our mid, then we have found the left half
+        - now update high and low with our target in mind and set low or high = mid +- 1/do logic
+    - right half
+        - if the value of low > the value of our mid, we've found the right half
+        - now update high and low with our target in mind and set low or high = mid +- 1/do logic
+
+Edge Cases
+- If duplicates exist in our array then it becomes difficult to figure out which half we're in when low == mid == high
+- to address this, increment left (or decrement right) to shrink the search space when we cant figure out which half we're in
