@@ -29,11 +29,11 @@ Key Properties
 - Iterative Approach
     - Maintain three pointers: previous (initially None), current (initially head), and next_temp
     - In each iteration
-        1. Store next_temp = current->next
-        2. Reverse the link: current->next = previous
-        3. Move previous forward: previous = current
-        4. Move current forward: current = next_temp
-    - The new head of the reversed list will be previous after the loop finishes
+        1. Store your next node in a variable `temp`
+        2. Reverse it by setting `current->next = previous`
+        3. Move previous forward by `previous = current`
+        4. Move current forward by `current = temp`
+    - The new `head` of the reversed list will be `previous` after the loop finishes because its reversed
 - Recursive Approach
     - Base case: If head is None or head->next is None, return head
     - Recursive step: new_head = reverseList(head->next)
@@ -49,7 +49,7 @@ When to Use:
 - Simplifying edge cases related to an empty list or operations at the beginning of the list
 - When you need a fixed reference point before the actual head that won't change
 
-Key Logic Ideas:
+Key Properties:
 - Create a dummy node (e.g., ListNode(0)) and point its next to the original head
 - Operations on dummy->next: All operations effectively start from dummy->next, so you don't have to write special checks for head == None or head changing
 - Return dummy->next: After all operations are complete, the actual head of the modified list will be dummy->next
@@ -82,7 +82,7 @@ When to Use:
 - To map original nodes to their corresponding copied nodes, preventing infinite loops and ensuring correct pointer assignment
 - Problems where you need to store and retrieve information about nodes that are not directly adjacent
 
-Key Logic Ideas:
+Key Properties:
 - Use a hash set to store visited nodes or a hash map to store key-value pairs
 - O(1) average time complexity for checking presence or retrieving values
 - If node in visited_set is True, a cycle exists
@@ -96,7 +96,7 @@ When to Use:
 - Searching for a value, inserting at a specific position (not head), deleting a specific node (when given the predecessor), printing the list
 - When you only need to look at the current node and potentially its immediate successor
 
-Key Logic Ideas:
+Key Properties:
 - Initialize current = head
 - Continue as long as current is not None
 - Current = current->next in each iteration
