@@ -29,16 +29,16 @@ Key Properties
 - Iterative Approach
     - Maintain three pointers: previous (initially None), current (initially head), and next_temp
     - In each iteration
-        1. Store next_temp = current.next
-        2. Reverse the link: current.next = previous
+        1. Store next_temp = current->next
+        2. Reverse the link: current->next = previous
         3. Move previous forward: previous = current
         4. Move current forward: current = next_temp
     - The new head of the reversed list will be previous after the loop finishes
 - Recursive Approach
-    - Base case: If head is None or head.next is None, return head
-    - Recursive step: new_head = reverseList(head.next)
-    - Fix current node's pointer: head.next.next = head
-    - Set current node's next to None: head.next = None
+    - Base case: If head is None or head->next is None, return head
+    - Recursive step: new_head = reverseList(head->next)
+    - Fix current node's pointer: head->next->next = head
+    - Set current node's next to None: head->next = None
     - Return new_head
 
 ## Dummy/Sentinel Nodes
@@ -51,8 +51,8 @@ When to Use:
 
 Key Logic Ideas:
 - Create a dummy node (e.g., ListNode(0)) and point its next to the original head
-- Operations on dummy.next: All operations effectively start from dummy.next, so you don't have to write special checks for head == None or head changing
-- Return dummy.next: After all operations are complete, the actual head of the modified list will be dummy.next
+- Operations on dummy->next: All operations effectively start from dummy->next, so you don't have to write special checks for head == None or head changing
+- Return dummy->next: After all operations are complete, the actual head of the modified list will be dummy->next
 
 ## Merging Linked Lists
 Problems often require merging two (or more) sorted linked lists into a single sorted list. This typically involves iterating through both lists and picking the smaller of the current nodes to append to the new merged list.
@@ -66,9 +66,9 @@ Key Properties
     - Use a dummy node to simplify appending to the merged list
     - Use a current pointer to traverse the merged list, starting from the dummy node
     - Compare the current nodes of the two input lists
-    - Append the smaller node to current.next and advance current and the pointer of the list from which the node was taken
+    - Append the smaller node to current->next and advance current and the pointer of the list from which the node was taken
     - After one list is exhausted, append the remaining nodes of the other list
-    - Return dummy.next
+    - Return dummy->next
 - Recursive Approach:
     - Base cases: If either list is None, return the other list
     - Recursive step, Compare the heads: The head of the merged list will be the smaller of the two. 
@@ -99,5 +99,5 @@ When to Use:
 Key Logic Ideas:
 - Initialize current = head
 - Continue as long as current is not None
-- Current = current.next in each iteration
+- Current = current->next in each iteration
 - Often, you'll need a previous pointer to keep track of the node before current to modify links
