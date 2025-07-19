@@ -42,7 +42,7 @@ Key Properties
     - Return new_head
 
 ## Dummy/Sentinel Nodes
-As  discussed before using a dummy node can simplify edge cases, especially when operations involve modifying the head of the list. It acts as a placeholder, so you don't have to constantly check for null head pointers.
+As  discussed before using a dummy node can simplify edge cases, especially when operations involve modifying the head of the list. It acts as a placeholder, so you don't have to constantly check for null head pointers. Using the dummy node will create a new list that you can do whatever on.
 
 When to Use
 - Operations that might modify the head of the list: This is the most common use case. For example, deleting the first node, inserting at the beginning, or merging lists where the new head needs to be determined dynamically
