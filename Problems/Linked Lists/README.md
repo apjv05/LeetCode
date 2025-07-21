@@ -41,7 +41,7 @@ Key Properties
     - Set current node's next to None: head->next = None
     - Return new_head
 
-## Dummy/Sentinel Nodes
+## Dummy Nodes
 As  discussed before using a dummy node can simplify edge cases, especially when operations involve modifying the head of the list. It acts as a placeholder, so you don't have to constantly check for null head pointers. Using the dummy node will create a new list that you can do whatever on.
 
 When to Use
