@@ -27,7 +27,7 @@ When to use
 
 Key Properties
 - Iterative Approach
-    - Maintain three pointers: previous (initially None), current (initially head), and next_temp
+    - Maintain three pointers: previous (initially null), current (initially head), and next
     - In each iteration
         1. Store your next node in a variable `temp`
         2. Reverse it by setting `current->next = previous`
@@ -62,17 +62,9 @@ When to Use
 - Often a sub-problem in larger linked list problems
 
 Key Properties
-- Iterative Approach
-    - Use a dummy node to simplify appending to the merged list
-    - Use a current pointer to traverse the merged list, starting from the dummy node
-    - Compare the current nodes of the two input lists
-    - Append the smaller node to current->next and advance current and the pointer of the list from which the node was taken
-    - After one list is exhausted, append the remaining nodes of the other list
-    - Return dummy->next
-- Recursive Approach
-    - Base cases: If either list is None, return the other list
-    - Recursive step, Compare the heads: The head of the merged list will be the smaller of the two. 
-    - Then, recursively merge the rest of the lists
+- Find the node you need to merge/do logic to validate
+- update previous node to point to the merged node
+- update the merged node to point to the next of the previous node
 
 ## Hash Table
 For problems where you need to keep track of visited nodes, or map original nodes to copied nodes (in case of deep copy with random pointers), a hash map can be very useful.
