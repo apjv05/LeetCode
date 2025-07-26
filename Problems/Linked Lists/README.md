@@ -34,12 +34,6 @@ Key Properties
         3. Move previous forward by `previous = current`
         4. Move current forward by `current = temp`
     - The new `head` of the reversed list will be `previous` after the loop finishes because its reversed
-- Recursive Approach
-    - Base case: If head is None or head->next is None, return head
-    - Recursive step: new_head = reverseList(head->next)
-    - Fix current node's pointer: head->next->next = head
-    - Set current node's next to None: head->next = None
-    - Return new_head
 
 ## Dummy Nodes
 As  discussed before using a dummy node can simplify edge cases, especially when operations involve modifying the head of the list. It acts as a placeholder, so you don't have to constantly check for null head pointers. Using the dummy node will create a new list that you can do whatever on.
@@ -80,16 +74,3 @@ Key Properties
 - If node in visited_set is True, a cycle exists
 - Iterate through the original list, create a new node for each, and store the mapping (original_node : new_node) in the hash map
 - Then, iterate again to set the next and random pointers of the new nodes using the map
-
-## Iterative Traversal with a Single Pointer
-Many basic linked list operations, like searching for a value, inserting at a specific position (not head/tail), or deleting a specific node, involve a straightforward iterative traversal using a single pointer.
-
-When to Use
-- Searching for a value, inserting at a specific position (not head), deleting a specific node (when given the predecessor), printing the list
-- When you only need to look at the current node and potentially its immediate successor
-
-Key Properties
-- Initialize current = head
-- Continue as long as current is not None
-- Current = current->next in each iteration
-- Often, you'll need a previous pointer to keep track of the node before current to modify links
