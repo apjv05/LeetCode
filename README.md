@@ -20,6 +20,6 @@ These topics aren't as covered.
 
 ## Progress
 
-- Total solved: 80+
+- Total solved: 90+
 - Language: C++
 - Solving pace: 7+ problems/week
