@@ -11,7 +11,7 @@ Key Properties
 - Base Case: What happens when you reach a null node? (Often return 0, true, false, or an empty list)
 - Recursive Step
     - Process the current node
-    - Make recursive calls to node.left and node.right
+    - Make recursive calls to node->left and node->right
     - Combine or use the results from the recursive calls to solve for the current node
 - Implicit Stack: The call stack handles the "backtracking."
 
@@ -20,7 +20,7 @@ Variants
     - When to Use: Problems where you need to process the node before its children.
     - Logic: `process(node)` -> `dfs(node->left)` -> `dfs(node->right)`
 - In-order (Left, Root, Right)
-    - When to Use: Especially for Binary Search Trees (BSTs), as it visits nodes in ascending order
+    - When to Use: Especially for Binary Search Trees (BSTs), as it visits nodes in ascending order (sorted)
     - Logic: `dfs(node->left)` -> `process(node)` -> `dfs(node->right)`
 - Post-order (Left, Right, Root)
     - When to Use: Problems where you need results from both children before processing the current node
@@ -54,7 +54,7 @@ When to use
 Key Properties
 - Define what the function solve(node) should return or do for a single node
 - Handle null nodes (the stopping condition)
-- Call solve(node.left) and solve(node.right)
+- Call solve(node->left) and solve(node->right)
 - Use the results from the children to compute the result for the current node
 - Top-Down
     - Pass information down from parent to children via function arguments
