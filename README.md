@@ -11,15 +11,15 @@ These topic are more covered and include a README.md full of patterns.
 - Linked Lists
 - Sliding Window
 - Stack
+- Trees
 - Two Pointers
 
 ### Minor
 These topics aren't as covered.
 - Math
-- Trees
 
 ## Progress
 
-- Total solved: 90+
+- Total solved: 100+
 - Language: C++
 - Solving pace: 7+ problems/week
