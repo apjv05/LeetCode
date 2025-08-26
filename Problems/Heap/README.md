@@ -1,4 +1,4 @@
-# Two Heaps Patterns
+# Heaps Patterns
 
 ## K-th Element
 This pattern is used to efficiently find the K-th smallest or largest element in a collection of data. It's often more efficient than sorting the entire array, especially when K is much smaller than the size of the array
