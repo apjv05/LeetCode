@@ -1,4 +1,5 @@
 # Heaps Patterns
+aka priority queue
 
 ## K-th Element
 This pattern is used to efficiently find the K-th smallest or largest element in a collection of data. It's often more efficient than sorting the entire array, especially when K is much smaller than the size of the array
@@ -15,6 +16,20 @@ Key Properties
     - use a max-heap of size K
     - add elements and, if the size exceeds K, you remove the largest element
     - The remaining element at the root is the K-th smallest
+
+## Top K Frequent Elements
+uses a heap to keep track of the top k most frequent elements in a collection
+
+When to use
+- when frequency is needed
+
+key properties
+- First, use a hash map to count the frequency of each element in the input array
+- Create a min-heap of size k
+- Iterate through the hash map's entries (element, frequency)
+- Push each entry into the min-heap based on its frequency
+- If the heap size exceeds k, pop the entry with the smallest frequency
+- After processing all entries, the elements remaining in the min-heap are the top k most frequent
 
 ## Merge K Sorted Lists/Arrays
 used to merge multiple sorted lists or arrays into a single sorted list. A naive approach would be to concatenate all lists and then sort, but a heap-based approach is much more efficient, especially with many lists
