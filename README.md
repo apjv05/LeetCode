@@ -17,6 +17,7 @@ These topic are more covered and include a README.md full of patterns.
 ### Minor
 These topics aren't as covered.
 - Math
+- Heap
 
 ## Progress
 
